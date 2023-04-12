@@ -3,6 +3,7 @@
 
 from brain_games.cli import welcome_user
 from brain_games.games.brain_even_logic import brain_even
+from brain_games.games.brain_calc_logic import brain_calc
 
 
 def check_game(str):
@@ -13,7 +14,9 @@ def check_game(str):
     '''
 
     game_dict = {
-                 'brain-even':brain_even}
+                 'brain-even':brain_even,
+                 'brain-calc':brain_calc
+    }
 
     if not str:
         str = input('What run game? ')
