@@ -4,6 +4,7 @@
 from brain_games.cli import welcome_user
 from brain_games.games.brain_even_logic import brain_even
 from brain_games.games.brain_calc_logic import brain_calc
+from brain_games.games.brain_gcd_logic import brain_gcd
 
 
 def check_game(str):
@@ -15,7 +16,8 @@ def check_game(str):
 
     game_dict = {
                  'brain-even':brain_even,
-                 'brain-calc':brain_calc
+                 'brain-calc':brain_calc,
+                 'brain-gcd':brain_gcd
     }
 
     if not str:
@@ -55,7 +57,7 @@ def scripts_game(count_repet, game):
             print('Correct!')
             continue
         else:
-            print(f"'{answer_game}' is wrong answer ;(. Correct answer was '{answer_user}'.")
+            print(f"'{answer_user}' is wrong answer ;(. Correct answer was '{answer_game}'.")
             res = False
             break
 
