@@ -17,11 +17,11 @@ def check_game(str):
     '''
 
     game_dict = {
-                 'brain-even':brain_even,
-                 'brain-calc':brain_calc,
-                 'brain-gcd':brain_gcd,
-                 'brain-progression':brain_progression,
-                 'brain-prime':brain_prime
+                 'brain-even': brain_even,
+                 'brain-calc': brain_calc,
+                 'brain-gcd': brain_gcd,
+                 'brain-progression': brain_progression,
+                 'brain-prime': brain_prime
     }
 
     if not str:
@@ -68,7 +68,7 @@ def scripts_game(count_repet, game):
     return res
 
 
-def main(game = None):
+def main(game=None):
     '''
     Game scenario.
     :param game: An optional parameter is the name of the game.
@@ -88,7 +88,8 @@ def main(game = None):
         else:
             print(f"Let's try again, {name}!")
 
-        is_continue = 'no' #'no' for check hexlet,  input('Want are you continue (yes/no)? ') work standart
+        is_continue = 'no'
+# 'no' for check hexlet,  input('Want are you continue (yes/no)? ') work standart
 
 #    print(f'Thanks for playing {name}.') # no, for check hexlet
 
