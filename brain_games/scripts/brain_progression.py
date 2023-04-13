@@ -7,5 +7,6 @@ from brain_games.scripts import brain_game_run
 def main():
     brain_game_run.main('brain-progression')
 
+
 if __name__ == '__main__':
     main()
