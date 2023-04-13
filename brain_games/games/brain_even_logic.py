@@ -25,6 +25,6 @@ def brain_even():
     answer_game = check_even(num_quest)
 
     print(f'Question: {num_quest}')
-    answer_user = input(f'Your answer: ')
+    answer_user = input('Your answer: ')
 
     return answer_game, answer_user
