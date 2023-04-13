@@ -9,7 +9,7 @@ def brain_progression():
 
     progression = list(range(first_el, last_el+1, step))
 
-    missing_el_index = randint(0, count_el)
+    missing_el_index = randint(0, count_el - 1)
 
     answer_game = progression[missing_el_index]
     progression[missing_el_index] = '..'
