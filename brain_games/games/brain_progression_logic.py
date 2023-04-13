@@ -7,7 +7,7 @@ def brain_progression():
     step = randint(2, 17)
     last_el = first_el + (count_el - 1) * step
 
-    progression = list(range(first_el, last_el+1, step))
+    progression = list(range(first_el, last_el + 1, step))
 
     missing_el_index = randint(0, count_el - 1)
 
