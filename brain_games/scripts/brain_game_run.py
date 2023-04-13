@@ -5,6 +5,7 @@ from brain_games.cli import welcome_user
 from brain_games.games.brain_even_logic import brain_even
 from brain_games.games.brain_calc_logic import brain_calc
 from brain_games.games.brain_gcd_logic import brain_gcd
+from brain_games.games.brain_progression_logic import brain_progression
 
 
 def check_game(str):
@@ -17,7 +18,8 @@ def check_game(str):
     game_dict = {
                  'brain-even':brain_even,
                  'brain-calc':brain_calc,
-                 'brain-gcd':brain_gcd
+                 'brain-gcd':brain_gcd,
+                 'brain-progression':brain_progression
     }
 
     if not str:
@@ -84,7 +86,7 @@ def main(game = None):
         else:
             print(f"Let's try again, {name}!")
 
-        is_continue = 'no' #'no' for check hexle,  input('Want are you continue (yes/no)? ') work standart
+        is_continue = 'no' #'no' for check hexlet,  input('Want are you continue (yes/no)? ') work standart
 
 #    print(f'Thanks for playing {name}.') # no, for check hexlet
 
