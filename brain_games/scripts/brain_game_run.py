@@ -6,6 +6,7 @@ from brain_games.games.brain_even_logic import brain_even
 from brain_games.games.brain_calc_logic import brain_calc
 from brain_games.games.brain_gcd_logic import brain_gcd
 from brain_games.games.brain_progression_logic import brain_progression
+from brain_games.games.brain_prime_logic import brain_prime
 
 
 def check_game(str):
@@ -19,7 +20,8 @@ def check_game(str):
                  'brain-even':brain_even,
                  'brain-calc':brain_calc,
                  'brain-gcd':brain_gcd,
-                 'brain-progression':brain_progression
+                 'brain-progression':brain_progression,
+                 'brain-prime':brain_prime
     }
 
     if not str:
