@@ -5,6 +5,14 @@
 [![Actions Status](https://github.com/CfyRJ/python-project-49/workflows/hexlet-check/badge.svg)](https://github.com/CfyRJ/python-project-49/actions)
 [![Maintainability](https://api.codeclimate.com/v1/badges/9af48807eb26ef27a71a/maintainability)](https://codeclimate.com/github/CfyRJ/python-project-49/maintainability)
 
+### Possible commands:
+
+##### *brain-even*
+##### *brain-calc*
+##### *brain-gcd*
+##### *brain-progression*
+##### *brain-prime*
+
 ### How work brain-even
 [![asciicast](https://asciinema.org/a/5FpoUui5YEAqURxtaUFztLiwg.svg)](https://asciinema.org/a/5FpoUui5YEAqURxtaUFztLiwg)
 
@@ -16,3 +24,6 @@
 
 ### How work brain-progression
 [![asciicast](https://asciinema.org/a/Ziiiqssah1tZi7K6bzlSwfsF8.svg)](https://asciinema.org/a/Ziiiqssah1tZi7K6bzlSwfsF8)
+
+### How work brain-prime
+[![asciicast](https://asciinema.org/a/vf90Zf5bDxfdUPMUHVtZhEhYt.svg)](https://asciinema.org/a/vf90Zf5bDxfdUPMUHVtZhEhYt)
