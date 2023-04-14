@@ -24,7 +24,7 @@ def brain_gcd():
     '''
     TEXT_QUEST = 'Find the greatest common divisor of given numbers.'
     num1 = randint(1, 1000)
-    num2 = randint(1, 1000)
+    num2 = randint(1, 10)
 
     print(TEXT_QUEST)
     print(f'Question: {num1} {num2}')
