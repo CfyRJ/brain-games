@@ -17,11 +17,11 @@ def check_game(str):
     '''
 
     game_dict = {
-                 'brain-even': brain_even,
-                 'brain-calc': brain_calc,
-                 'brain-gcd': brain_gcd,
-                 'brain-progression': brain_progression,
-                 'brain-prime': brain_prime
+        'brain-even': brain_even,
+        'brain-calc': brain_calc,
+        'brain-gcd': brain_gcd,
+        'brain-progression': brain_progression,
+        'brain-prime': brain_prime
     }
 
     if not str:
@@ -51,6 +51,7 @@ def scripts_game(count_repet, game):
     :param count_repet: int
     :return: bool
     '''
+    LOSE_TEXT = 'is wrong answer ;(. Correct answer was'
     res = True
     func = check_game(game)
 
@@ -61,7 +62,7 @@ def scripts_game(count_repet, game):
             print('Correct!')
             continue
         else:
-            print(f"'{answer_user}' is wrong answer ;(. Correct answer was '{answer_game}'.")
+            print(f"'{answer_user}' {LOSE_TEXT} '{answer_game}'.")
             res = False
             break
 
@@ -89,9 +90,12 @@ def main(game=None):
             print(f"Let's try again, {name}!")
 
         is_continue = 'no'
-# 'no' for check hexlet,  input('Want are you continue (yes/no)? ') work standart
+# 'no' for check hexlet,
+# input('Want are you continue (yes/no)? ')
+# work standart
 
-#    print(f'Thanks for playing {name}.') # no, for check hexlet
+#    print(f'Thanks for playing {name}.')
+# no, for check hexlet
 
     return None
 
