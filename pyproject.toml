@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "hexlet-code"
-version = "0.4.2"
+version = "0.4.3"
 description = ""
 authors = ["Alex Kositskiy <koso-96@mail.ru>"]
 readme = "README.md"
