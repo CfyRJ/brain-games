@@ -21,9 +21,11 @@ def brain_even():
     Waiting for a 'yes' or 'no' answer.
     return: str
     '''
+    TEXT_QUEST = 'Answer "yes" if the number is even, otherwise answer "no".'
     num_quest = randint(0, 1000)
     answer_game = check_even(num_quest)
 
+    print(TEXT_QUEST)
     print(f'Question: {num_quest}')
     answer_user = input('Your answer: ')
 
