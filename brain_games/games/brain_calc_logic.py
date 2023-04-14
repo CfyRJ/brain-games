@@ -25,11 +25,11 @@ def brain_calc():
     :return: str
     '''
     TEXT_QUEST = 'What is the result of the expression?'
-    list_operations = ['+', '-', '*', '/']
+    LIST_OPERATIONS = ['+', '-', '*']
 
     num1 = randint(0, 1000)
     num2 = randint(0, 10)
-    operation = choice(list_operations)
+    operation = choice(LIST_OPERATIONS)
 
     answer_game = program_evaluation(num1, num2, operation)
 
