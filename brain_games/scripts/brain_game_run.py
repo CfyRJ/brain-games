@@ -51,7 +51,6 @@ def scripts_game(count_repet, game):
     :param count_repet: int
     :return: bool
     '''
-    LOSE_TEXT = 'is wrong answer ;(. Correct answer was'
     res = True
     func = check_game(game)
 
@@ -62,7 +61,8 @@ def scripts_game(count_repet, game):
             print('Correct!')
             continue
         else:
-            print(f"'{answer_user}' {LOSE_TEXT} '{answer_game}'.")
+            print(f"'{answer_user}' is wrong answer ;(.", end=' ')
+            print(f"Correct answer was '{answer_game}'.")
             res = False
             break
 
