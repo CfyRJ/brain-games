@@ -74,16 +74,16 @@ def main(game=None):
     :param game: An optional parameter is the name of the game.
     :return: None
     '''
-    welcome_text = 'Welcome to the Brain Games!'
-    count_repet = 3
+    WELCOME_TEXT = 'Welcome to the Brain Games!'
+    COUNT_REPET = 3
     is_continue = 'yes'
 
-    print(welcome_text)
+    print(WELCOME_TEXT)
     name = welcome_user()
 
     while is_continue == 'yes':
 
-        if scripts_game(count_repet, game):
+        if scripts_game(COUNT_REPET, game):
             print(f"Congratulations, {name}!")
         else:
             print(f"Let's try again, {name}!")
