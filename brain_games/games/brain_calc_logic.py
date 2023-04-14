@@ -24,6 +24,7 @@ def brain_calc():
     Returns the game's response and the user's response.
     :return: str
     '''
+    TEXT_QUEST = 'What is the result of the expression?'
     list_operations = ['+', '-', '*', '/']
 
     num1 = randint(0, 100)
@@ -32,6 +33,7 @@ def brain_calc():
 
     answer_game = program_evaluation(num1, num2, operation)
 
+    print(TEXT_QUEST)
     print(f'Question: {num1} {operation} {num2}')
     answer_user = input('Your answer: ')
 
