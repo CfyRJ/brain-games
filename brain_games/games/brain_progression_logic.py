@@ -2,6 +2,7 @@ from random import randint
 
 
 def brain_progression():
+    TEXT_QUEST = 'What number is missing in the progression?'
     count_el = randint(5, 10)
     first_el = randint(1, 100)
     step = randint(2, 17)
@@ -14,7 +15,7 @@ def brain_progression():
     answer_game = progression[missing_el_index]
     progression[missing_el_index] = '..'
 
-    print('What number i missing in the progression?')
+    print(TEXT_QUEST)
     print(f'Question: {progression}')
     answer_user = int(input('Yuor answer: '))
 
