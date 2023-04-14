@@ -14,6 +14,8 @@ def brain_progression():
 
     answer_game = progression[missing_el_index]
     progression[missing_el_index] = '..'
+    progression = list(map(str, progression))
+    progression = ' '.join(progression)
 
     print(TEXT_QUEST)
     print(f'Question: {progression}')
