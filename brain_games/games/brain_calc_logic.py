@@ -27,8 +27,8 @@ def brain_calc():
     TEXT_QUEST = 'What is the result of the expression?'
     list_operations = ['+', '-', '*', '/']
 
-    num1 = randint(0, 100)
-    num2 = randint(0, 100)
+    num1 = randint(0, 1000)
+    num2 = randint(0, 10)
     operation = choice(list_operations)
 
     answer_game = program_evaluation(num1, num2, operation)
