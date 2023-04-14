@@ -21,12 +21,12 @@ def is_prime(num):
 
 
 def brain_prime():
-    quest_text = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+    TEXT_QUEST = 'Answer "yes" if given number is prime. Otherwise answer "no".'
     quest_num = randint(2, 1000)
 
     answer_game = is_prime(quest_num)
 
-    print(quest_text)
+    print(TEXT_QUEST)
     print(f'Question: {quest_num}')
     answer_user = input('Your answer: ')
 
