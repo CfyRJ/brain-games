@@ -1,6 +1,14 @@
 from random import randint
 
 
+MIN_COUNT_EL = 5
+MAX_COUNT_EL = 10
+MIN_EL_RANGE = 1
+MAX_EL_RANGE = 100
+MIN_STEP = 2
+MAX_STEP = 17
+
+
 def brain_progression():
     '''
     Generates a question about a missing progression element.
@@ -9,9 +17,9 @@ def brain_progression():
     :return: int, str
     '''
     text_quest = 'What number is missing in the progression?'
-    count_el = randint(5, 10)
-    first_el = randint(1, 100)
-    step = randint(2, 17)
+    count_el = randint(MIN_COUNT_EL, MAX_COUNT_EL)
+    first_el = randint(MIN_EL_RANGE, MAX_EL_RANGE)
+    step = randint(MIN_STEP, MAX_STEP)
     last_el = first_el + (count_el - 1) * step
 
     progression = list(range(first_el, last_el + 1, step))
