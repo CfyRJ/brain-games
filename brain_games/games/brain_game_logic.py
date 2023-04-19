@@ -43,3 +43,18 @@ def brain_game(game):
             return False
     else:
         return True
+
+
+def end_game(win_lose, name):
+    '''
+    Says win or lose.
+    :param win_lose: bool
+    :param name: str
+    :return: None
+    '''
+    if win_lose:
+        print(f'Congratulations, {name}!')
+    else:
+        print(f"Let's try again, {name}!")
+
+    return None
