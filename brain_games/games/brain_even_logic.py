@@ -1,18 +1,14 @@
 from random import randint
 
 
-def check_even(num):
+def is_even(num):
     '''
     Checking a number for evenness.
     :param num: int
-    :return: str
+    :return: bool
     '''
-    res = 'no'
 
-    if num % 2 == 0:
-        res = 'yes'
-
-    return res
+    return num % 2 == 0
 
 
 def brain_even():
@@ -24,7 +20,7 @@ def brain_even():
     '''
     TEXT_QUEST = 'Answer "yes" if the number is even, otherwise answer "no".'
     num_quest = randint(0, 1000)
-    answer_game = check_even(num_quest)
+    answer_game = is_even(num_quest)
 
     TEXT_QUEST += '\n' + f'Question: {num_quest}'
 
