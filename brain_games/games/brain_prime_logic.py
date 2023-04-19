@@ -24,11 +24,11 @@ def brain_prime():
     Calculates the answer for an expression.
     Returns the question and its own answer.
     '''
-    TEXT_QUEST = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+    text_quest = 'Answer "yes" if given number is prime. Otherwise answer "no".'
     quest_num = randint(2, 1000)
 
     answer_game = is_prime(quest_num)
 
-    TEXT_QUEST += '\n' + f'Question: {quest_num}'
+    text_quest += '\n' + f'Question: {quest_num}'
 
-    return answer_game, TEXT_QUEST
+    return answer_game, text_quest
