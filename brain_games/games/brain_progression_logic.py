@@ -6,6 +6,7 @@ def brain_progression():
     Generates a question about a missing progression element.
     Calculates the answer for an expression.
     Returns the question and its own answer.
+    :return: int, str
     '''
     TEXT_QUEST = 'What number is missing in the progression?'
     count_el = randint(5, 10)
