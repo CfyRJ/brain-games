@@ -18,10 +18,10 @@ def brain_even():
     Returns the question and its own answer.
     return: str, str
     '''
-    TEXT_QUEST = 'Answer "yes" if the number is even, otherwise answer "no".'
+    text_quest = 'Answer "yes" if the number is even, otherwise answer "no".'
     num_quest = randint(0, 1000)
     answer_game = is_even(num_quest)
 
-    TEXT_QUEST += '\n' + f'Question: {num_quest}'
+    text_quest += '\n' + f'Question: {num_quest}'
 
-    return answer_game, TEXT_QUEST
+    return answer_game, text_quest
