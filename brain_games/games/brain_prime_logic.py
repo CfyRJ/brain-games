@@ -5,19 +5,17 @@ def is_prime(num):
     '''
     Is the number prime.
     :param num: int
-    :return: str
+    :return: bool
     '''
     denominator = 2
-    res = 'yes'
 
     while denominator <= num ** 0.5:
         if num % denominator == 0:
-            res = 'no'
-            break
+            return False
 
         denominator += 1
-
-    return res
+    else:
+        return True
 
 
 def brain_prime():
