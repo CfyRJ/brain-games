@@ -8,7 +8,7 @@ def brain_progression():
     Returns the question and its own answer.
     :return: int, str
     '''
-    TEXT_QUEST = 'What number is missing in the progression?'
+    text_quest = 'What number is missing in the progression?'
     count_el = randint(5, 10)
     first_el = randint(1, 100)
     step = randint(2, 17)
@@ -23,6 +23,6 @@ def brain_progression():
     progression = list(map(str, progression))
     progression = ' '.join(progression)
 
-    TEXT_QUEST += '\n' + f'Question: {progression}'
+    text_quest += '\n' + f'Question: {progression}'
 
-    return answer_game, TEXT_QUEST
+    return answer_game, text_quest
