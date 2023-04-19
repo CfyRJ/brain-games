@@ -1,6 +1,10 @@
 from random import randint
 
 
+MIN_EL_RANGE = 0
+MAX_EL_RANGE = 1000
+
+
 def is_even(num):
     '''
     Checking a number for evenness.
@@ -19,7 +23,7 @@ def brain_even():
     return: str, str
     '''
     text_quest = 'Answer "yes" if the number is even, otherwise answer "no".'
-    num_quest = randint(0, 1000)
+    num_quest = randint(MIN_EL_RANGE, MAX_EL_RANGE)
     answer_game = is_even(num_quest)
 
     text_quest += '\n' + f'Question: {num_quest}'
