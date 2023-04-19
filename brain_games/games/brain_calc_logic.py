@@ -26,15 +26,15 @@ def brain_calc():
     Returns the question and its own answer.
     :return: str
     '''
-    TEXT_QUEST = 'What is the result of the expression?'
-    LIST_OPERATIONS = ['+', '-', '*']
+    text_quest = 'What is the result of the expression?'
+    list_operations = ['+', '-', '*']
 
     num1 = randint(0, 1000)
     num2 = randint(0, 10)
-    operation = choice(LIST_OPERATIONS)
+    operation = choice(list_operations)
 
     answer_game = calculate_expression(num1, num2, operation)
 
-    TEXT_QUEST += '\n' + f'Question: {num1} {operation} {num2}'
+    text_quest += '\n' + f'Question: {num1} {operation} {num2}'
 
-    return answer_game, TEXT_QUEST
+    return answer_game, text_quest
