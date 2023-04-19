@@ -18,7 +18,7 @@ def is_answers(answer_game, answer_user):
     :return: bool
     '''
 
-    return True if str(answer_user) == str(answer_game) else False
+    return True if answer_user == str(answer_game) else False
 
 
 def brain_game(game):
@@ -33,6 +33,9 @@ def brain_game(game):
     for i in range(count_repeat):
         answer_game, text_quest = game()
         answer_user = ask_quest(text_quest)
+
+        if type(answer_game) == bool:
+            answer_game = 'yes' if answer_game else 'no'
 
         if is_answers(answer_game, answer_user):
             print('Correct!')
