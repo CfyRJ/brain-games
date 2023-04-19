@@ -2,7 +2,7 @@ import operator
 from random import randint, choice
 
 
-def program_evaluation(num1, num2, oper):
+def calculate_expression(num1, num2, oper):
     '''
     Returns the result of an expression.
     :param num1: int
@@ -33,7 +33,7 @@ def brain_calc():
     num2 = randint(0, 10)
     operation = choice(LIST_OPERATIONS)
 
-    answer_game = program_evaluation(num1, num2, operation)
+    answer_game = calculate_expression(num1, num2, operation)
 
     TEXT_QUEST += '\n' + f'Question: {num1} {operation} {num2}'
 
