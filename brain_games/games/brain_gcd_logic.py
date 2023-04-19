@@ -4,8 +4,9 @@ from math import gcd
 
 def brain_gcd():
     '''
-    Calculates the greatest common multiple.
-    :return: tuple from int
+    Generates a question about the greatest common divisor.
+    Computes its own answer. Returns the question and its own answer.
+    :return: inr, str
     '''
     TEXT_QUEST = 'Find the greatest common divisor of given numbers.'
     num1 = randint(1, 1000)
@@ -13,8 +14,6 @@ def brain_gcd():
 
     answer_game = gcd(num1, num2)
 
-    print(TEXT_QUEST)
-    print(f'Question: {num1} {num2}')
-    answer_user = int(input('Your answer: '))
+    TEXT_QUEST += '\n' + f'Question: {num1} {num2}'
 
-    return answer_game, answer_user
+    return answer_game, TEXT_QUEST

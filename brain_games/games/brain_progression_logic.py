@@ -2,6 +2,11 @@ from random import randint
 
 
 def brain_progression():
+    '''
+    Generates a question about a missing progression element.
+    Calculates the answer for an expression.
+    Returns the question and its own answer.
+    '''
     TEXT_QUEST = 'What number is missing in the progression?'
     count_el = randint(5, 10)
     first_el = randint(1, 100)
@@ -17,8 +22,6 @@ def brain_progression():
     progression = list(map(str, progression))
     progression = ' '.join(progression)
 
-    print(TEXT_QUEST)
-    print(f'Question: {progression}')
-    answer_user = int(input('Yuor answer: '))
+    TEXT_QUEST += '\n' + f'Question: {progression}'
 
-    return answer_game, answer_user
+    return answer_game, TEXT_QUEST
