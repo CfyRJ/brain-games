@@ -1,7 +1,11 @@
 import prompt
 
 
-def welcome_user():
+def ask_name_user():
+    '''
+    Requests and returns the username.
+    :return: str
+    '''
 
     name = prompt.string('May I have your name? ')
     print(f'Hello, {name}!')
