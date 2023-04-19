@@ -6,7 +6,7 @@ def brain_gcd():
     '''
     Generates a question about the greatest common divisor.
     Computes its own answer. Returns the question and its own answer.
-    :return: inr, str
+    :return: int, str
     '''
     TEXT_QUEST = 'Find the greatest common divisor of given numbers.'
     num1 = randint(1, 1000)
