@@ -1,3 +1,15 @@
+def ask_quest(text_quest):
+    '''
+    Ask question. Return answer.
+    :param text_quest: str
+    :return: str
+    '''
+    print(text_quest)
+    answer_user = input('Your answer: ')
+
+    return answer_user
+
+
 def is_answers(answer_game, answer_user):
     '''
     Checking the correctness of the answer.
@@ -19,7 +31,8 @@ def brain_game(game):
     count_repeat = 3
 
     for i in range(count_repeat):
-        answer_game, answer_user = game()
+        answer_game, text_quest = game()
+        answer_user = ask_quest(text_quest)
 
         if is_answers(answer_game, answer_user):
             print('Correct!')
