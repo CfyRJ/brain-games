@@ -8,12 +8,12 @@ def brain_gcd():
     Computes its own answer. Returns the question and its own answer.
     :return: int, str
     '''
-    TEXT_QUEST = 'Find the greatest common divisor of given numbers.'
+    text-quest = 'Find the greatest common divisor of given numbers.'
     num1 = randint(1, 1000)
     num2 = randint(1, 10)
 
     answer_game = gcd(num1, num2)
 
-    TEXT_QUEST += '\n' + f'Question: {num1} {num2}'
+    text-quest += '\n' + f'Question: {num1} {num2}'
 
-    return answer_game, TEXT_QUEST
+    return answer_game, text-quest
