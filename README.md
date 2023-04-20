@@ -1,17 +1,24 @@
 # python-package
 
+### This is a collection of games. Even number. Evaluate expression. Find the greatest common multiple. Is it a simple number. Determine the missing term of the progression.
+
 ### Hexlet tests and linter status:
 
 [![Actions Status](https://github.com/CfyRJ/python-project-49/workflows/hexlet-check/badge.svg)](https://github.com/CfyRJ/python-project-49/actions)
 [![Maintainability](https://api.codeclimate.com/v1/badges/9af48807eb26ef27a71a/maintainability)](https://codeclimate.com/github/CfyRJ/python-project-49/maintainability)
 
-### Possible commands:
+### Installation:
 
-##### *brain-even*
-##### *brain-calc*
-##### *brain-gcd*
-##### *brain-progression*
-##### *brain-prime*
+##### make build - Game assembly.
+##### make package-install - Game installation.
+
+### Commands for launching games:
+
+##### *brain-even* - Launching the game to determine an even number.
+##### *brain-calc* - Launching the game to calculate the expression.
+##### *brain-gcd* - Launching the game to find the greatest common multiple.
+##### *brain-progression* - Launching the game to find the missing element of the progression.
+##### *brain-prime* - Launching the game to determine a prime number.
 
 ### How work brain-even
 [![asciicast](https://asciinema.org/a/5FpoUui5YEAqURxtaUFztLiwg.svg)](https://asciinema.org/a/5FpoUui5YEAqURxtaUFztLiwg)
