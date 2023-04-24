@@ -1,8 +1,8 @@
 from random import randint
 
 
-MIN_EL_RANGE = 2
-MAX_EL_RANGE = 1000
+MIN_RANGE = 2
+MAX_RANGE = 1000
 
 
 def is_prime(num):
@@ -29,7 +29,7 @@ def brain_prime():
     Returns the question and its own answer.
     '''
     text_quest = 'Answer "yes" if given number is prime. Otherwise answer "no".'
-    quest_num = randint(MIN_EL_RANGE, MAX_EL_RANGE)
+    quest_num = randint(MIN_RANGE, MAX_RANGE)
 
     answer_game = is_prime(quest_num)
 
