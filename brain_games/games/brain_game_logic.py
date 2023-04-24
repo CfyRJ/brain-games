@@ -4,7 +4,7 @@ def ask_quest(text_quest):
     :param text_quest: str
     :return: str
     '''
-    print(text_quest)
+    print(f'Question: {text_quest}')
     answer_user = input('Your answer: ')
 
     return answer_user
@@ -21,17 +21,19 @@ def is_answers(answer_game, answer_user):
     return True if answer_user == str(answer_game) else False
 
 
-def brain_game(game):
+def start_game(module_game):
     '''
     Starts the game.
-    :param game: function
+    :param game: module
     :return: bool
     '''
 
     count_repeat = 3
 
     for i in range(count_repeat):
-        answer_game, text_quest = game()
+        answer_game, text_quest = module_game.make_game_work()
+
+        print(module_game.GAME_CONDITIONS)
         answer_user = ask_quest(text_quest)
 
         if type(answer_game) == bool:
