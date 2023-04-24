@@ -1,6 +1,8 @@
 from random import randint
 
 
+GAME_CONDITIONS = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+
 MIN_RANGE = 2
 MAX_RANGE = 1000
 
@@ -22,17 +24,16 @@ def is_prime(num):
         return True
 
 
-def brain_prime():
+def make_game_work():
     '''
     Generates an prime number question.
     Calculates the answer for an expression.
     Returns the question and its own answer.
     '''
-    text_quest = 'Answer "yes" if given number is prime. Otherwise answer "no".'
     quest_num = randint(MIN_RANGE, MAX_RANGE)
 
     answer_game = is_prime(quest_num)
 
-    text_quest += '\n' + f'Question: {quest_num}'
+    text_quest = f'{quest_num}'
 
     return answer_game, text_quest
