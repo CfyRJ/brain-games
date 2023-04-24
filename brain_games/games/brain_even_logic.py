@@ -1,8 +1,8 @@
 from random import randint
 
 
-MIN_EL_RANGE = 0
-MAX_EL_RANGE = 1000
+MIN_RANGE = 0
+MAX_RANGE = 1000
 
 
 def is_even(num):
@@ -23,7 +23,7 @@ def brain_even():
     return: str, str
     '''
     text_quest = 'Answer "yes" if the number is even, otherwise answer "no".'
-    num_quest = randint(MIN_EL_RANGE, MAX_EL_RANGE)
+    num_quest = randint(MIN_RANGE, MAX_RANGE)
     answer_game = is_even(num_quest)
 
     text_quest += '\n' + f'Question: {num_quest}'
