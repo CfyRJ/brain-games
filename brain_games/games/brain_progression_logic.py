@@ -1,10 +1,10 @@
 from random import randint
 
 
-MIN_COUNT_EL = 5
-MAX_COUNT_EL = 10
-MIN_EL_RANGE = 1
-MAX_EL_RANGE = 100
+MIN_COUNT = 5
+MAX_COUNT = 10
+MIN_RANGE = 1
+MAX_RANGE = 100
 MIN_STEP = 2
 MAX_STEP = 17
 
@@ -17,8 +17,8 @@ def brain_progression():
     :return: int, str
     '''
     text_quest = 'What number is missing in the progression?'
-    count_el = randint(MIN_COUNT_EL, MAX_COUNT_EL)
-    first_el = randint(MIN_EL_RANGE, MAX_EL_RANGE)
+    count_el = randint(MIN_COUNT, MAX_COUNT)
+    first_el = randint(MIN_RANGE, MAX_RANGE)
     step = randint(MIN_STEP, MAX_STEP)
     last_el = first_el + (count_el - 1) * step
 
