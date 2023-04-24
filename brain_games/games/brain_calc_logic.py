@@ -2,6 +2,8 @@ import operator
 from random import randint, choice
 
 
+GAME_CONDITIONS = 'What is the result of the expression?'
+
 MIN_RANGE = 0
 MAX_RANGE1 = 1000
 MAX_RANGE2 = 10
@@ -24,14 +26,13 @@ def calculate_expression(num1, num2, oper):
     return str(operations[oper](num1, num2))
 
 
-def brain_calc():
+def make_game_work():
     '''
     Generates an expression question.
     Calculates the answer for an expression.
     Returns the question and its own answer.
     :return: str
     '''
-    text_quest = 'What is the result of the expression?'
     operations = ['+', '-', '*']
 
     num1 = randint(MIN_RANGE, MAX_RANGE1)
@@ -40,6 +41,6 @@ def brain_calc():
 
     answer_game = calculate_expression(num1, num2, operation)
 
-    text_quest += '\n' + f'Question: {num1} {operation} {num2}'
+    text_quest = f'{num1} {operation} {num2}'
 
     return answer_game, text_quest
