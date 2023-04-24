@@ -2,9 +2,9 @@ from random import randint
 from math import gcd
 
 
-MIN_EL_RANGE = 1
-MAX_EL_FIRST_RANGE = 1000
-MAX_EL_SECOND_RANGE = 10
+MIN_RANGE = 1
+MAX_RANGE1 = 1000
+MAX_RANGE2 = 10
 
 
 def brain_gcd():
@@ -14,8 +14,8 @@ def brain_gcd():
     :return: int, str
     '''
     text_quest = 'Find the greatest common divisor of given numbers.'
-    num1 = randint(MIN_EL_RANGE, MAX_EL_FIRST_RANGE)
-    num2 = randint(MIN_EL_RANGE, MAX_EL_SECOND_RANGE)
+    num1 = randint(MIN_RANGE, MAX_RANGE1)
+    num2 = randint(MIN_RANGE, MAX_RANGE2)
 
     answer_game = gcd(num1, num2)
 
