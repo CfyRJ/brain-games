@@ -3,16 +3,16 @@
 
 from brain_games.scripts.brain_games import welcome
 from brain_games.cli import ask_name_user
-from brain_games.games.brain_game_logic import brain_game
+from brain_games.games.brain_game_logic import start_game
 from brain_games.games.brain_game_logic import end_game
-from brain_games.games.brain_even_logic import brain_even
+from brain_games.games import brain_even_logic
 
 
 def main():
     welcome()
     name = ask_name_user()
 
-    win_lose = brain_game(brain_even)
+    win_lose = start_game(brain_even_logic)
 
     end_game(win_lose, name)
 
