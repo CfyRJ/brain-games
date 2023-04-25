@@ -1,9 +1,18 @@
 [tool.poetry]
 name = "hexlet-code"
 version = "0.4.5"
-description = ""
+description = "This is a collection of games. Even number. Evaluate expression. Find the greatest common multiple. Is it a simple number. Determine the missing term of the progression."
 authors = ["Alex Kositskiy <koso-96@mail.ru>"]
 readme = "README.md"
+repository = "https://github.com/CfyRJ/python-project-49"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Other Audience",
+    "License :: Aladdin Free Public License (AFPL)",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3 :: Only",
+]
 packages = [{include = "brain_games"}]
 
 [tool.poetry.dependencies]
