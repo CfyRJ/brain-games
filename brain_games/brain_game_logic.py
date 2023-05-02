@@ -33,7 +33,7 @@ def start_game(module_game):
     for i in range(count_repeat):
         answer_game, text_quest = module_game.make_game_work()
 
-        print(module_game.GAME_CONDITIONS)
+        print(module_game.GAME_CONDITION)
         answer_user = ask_quest(text_quest)
 
         if type(answer_game) == bool:
