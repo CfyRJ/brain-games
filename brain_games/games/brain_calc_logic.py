@@ -9,12 +9,12 @@ MAX_RANGE1 = 1000
 MAX_RANGE2 = 10
 
 
-def calculate_expression(num1, num2, oper):
+def calculate_expression(num1, num2, operation):
     '''
     Returns the result of an expression.
     :param num1: int
     :param num2:int
-    :param oper: The function to be called.
+    :param operation: The function to be called.
     :return: str
     '''
     operations = {
@@ -23,7 +23,7 @@ def calculate_expression(num1, num2, oper):
         "*": operator.mul,
     }
 
-    return str(operations[oper](num1, num2))
+    return str(operations[operation](num1, num2))
 
 
 def make_game_work():
@@ -41,6 +41,6 @@ def make_game_work():
 
     answer_game = calculate_expression(num1, num2, operation)
 
-    text_quest = f'{num1} {operation} {num2}'
+    question = f'{num1} {operation} {num2}'
 
-    return answer_game, text_quest
+    return answer_game, question
