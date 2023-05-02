@@ -2,7 +2,7 @@ from random import randint
 from math import gcd
 
 
-GAME_CONDITIONS = 'Find the greatest common divisor of given numbers.'
+GAME_CONDITION = 'Find the greatest common divisor of given numbers.'
 
 MIN_RANGE = 1
 MAX_RANGE1 = 1000
