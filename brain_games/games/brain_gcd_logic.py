@@ -20,6 +20,6 @@ def make_game_work():
 
     answer_game = gcd(num1, num2)
 
-    text_quest = f'{num1} {num2}'
+    question = f'{num1} {num2}'
 
-    return answer_game, text_quest
+    return answer_game, question
