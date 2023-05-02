@@ -27,6 +27,6 @@ def make_game_work():
     num_quest = randint(MIN_RANGE, MAX_RANGE)
     answer_game = is_even(num_quest)
 
-    text_quest = f'{num_quest}'
+    question = f'{num_quest}'
 
-    return answer_game, text_quest
+    return answer_game, question
