@@ -18,20 +18,20 @@ def make_game_work():
     Returns the question and its own answer.
     :return: int, str
     '''
-    count_el = randint(MIN_COUNT, MAX_COUNT)
-    first_el = randint(MIN_RANGE, MAX_RANGE)
+    elements_count = randint(MIN_COUNT, MAX_COUNT)
+    first_element = randint(MIN_RANGE, MAX_RANGE)
     step = randint(MIN_STEP, MAX_STEP)
-    last_el = first_el + (count_el - 1) * step
+    last_element = first_element + (elements_count - 1) * step
 
-    progression = list(range(first_el, last_el + 1, step))
+    progression = list(range(first_element, last_element + 1, step))
 
-    missing_el_index = randint(0, count_el - 1)
+    missing_el_index = randint(0, elements_count - 1)
 
     answer_game = progression[missing_el_index]
     progression[missing_el_index] = '..'
     progression = list(map(str, progression))
     progression = ' '.join(progression)
 
-    text_quest = f'{progression}'
+    question = f'{progression}'
 
-    return answer_game, text_quest
+    return answer_game, question
