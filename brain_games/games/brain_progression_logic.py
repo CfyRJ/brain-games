@@ -1,7 +1,7 @@
 from random import randint
 
 
-GAME_CONDITIONS = 'What number is missing in the progression?'
+GAME_CONDITION = 'What number is missing in the progression?'
 
 MIN_COUNT = 5
 MAX_COUNT = 10
