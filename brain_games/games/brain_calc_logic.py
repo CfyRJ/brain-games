@@ -2,7 +2,7 @@ import operator
 from random import randint, choice
 
 
-GAME_CONDITIONS = 'What is the result of the expression?'
+GAME_CONDITION = 'What is the result of the expression?'
 
 MIN_RANGE = 0
 MAX_RANGE1 = 1000
