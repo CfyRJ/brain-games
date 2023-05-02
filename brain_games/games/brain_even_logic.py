@@ -1,7 +1,7 @@
 from random import randint
 
 
-GAME_CONDITIONS = 'Answer "yes" if the number is even, otherwise answer "no".'
+GAME_CONDITION = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 MIN_RANGE = 0
 MAX_RANGE = 1000
