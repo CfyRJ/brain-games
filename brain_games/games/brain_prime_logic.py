@@ -35,6 +35,6 @@ def make_game_work():
 
     answer_game = is_prime(quest_num)
 
-    text_quest = f'{quest_num}'
+    question = f'{quest_num}'
 
-    return answer_game, text_quest
+    return answer_game, question
