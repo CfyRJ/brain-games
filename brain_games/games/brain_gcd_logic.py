@@ -9,7 +9,7 @@ MAX_RANGE1 = 1000
 MAX_RANGE2 = 10
 
 
-def make_game_work():
+def make_game_data():
     '''
     Generates a question about the greatest common divisor.
     Computes its own answer. Returns the question and its own answer.
