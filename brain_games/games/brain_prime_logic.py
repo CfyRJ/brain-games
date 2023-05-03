@@ -37,7 +37,7 @@ def make_game_data():
     '''
     quest_num = randint(MIN_RANGE, MAX_RANGE)
 
-    answer_game = is_prime(quest_num)
+    answer_game = 'yes' if is_prime(quest_num) else 'no'
 
     question = f'{quest_num}'
 
