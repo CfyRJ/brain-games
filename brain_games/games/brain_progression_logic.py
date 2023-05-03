@@ -11,7 +11,7 @@ MIN_STEP = 2
 MAX_STEP = 17
 
 
-def make_game_work():
+def make_game_data():
     '''
     Generates a question about a missing progression element.
     Calculates the answer for an expression.
