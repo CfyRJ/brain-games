@@ -18,7 +18,7 @@ def make_game_data():
     num1 = randint(MIN_RANGE, MAX_RANGE1)
     num2 = randint(MIN_RANGE, MAX_RANGE2)
 
-    answer_game = gcd(num1, num2)
+    answer_game = str(gcd(num1, num2))
 
     question = f'{num1} {num2}'
 
