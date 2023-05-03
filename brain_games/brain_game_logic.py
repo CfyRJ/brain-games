@@ -1,3 +1,6 @@
+COUNT_REPEAT = 3
+
+
 def ask_quest(text_quest):
     '''
     Ask question. Return answer.
@@ -28,9 +31,8 @@ def start_game(module_game):
     :return: bool
     '''
 
-    count_repeat = 3
 
-    for i in range(count_repeat):
+    for i in range(COUNT_REPEAT):
         answer_game, text_quest = module_game.make_game_work()
 
         print(module_game.GAME_CONDITION)
