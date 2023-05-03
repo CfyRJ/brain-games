@@ -24,10 +24,7 @@ def play_game(module_game):
         print(f'Question: {text_quest}')
         answer_user = input('Your answer: ')
 
-        if type(answer_game) == bool:
-            answer_game = 'yes' if answer_game else 'no'
-
-        if answer_user == str(answer_game):
+        if answer_user == answer_game:
             print('Correct!')
             continue
         else:
