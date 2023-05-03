@@ -11,6 +11,18 @@ MIN_STEP = 2
 MAX_STEP = 17
 
 
+def make_progression(first_element, elements_count, step):
+    """
+    Make arithmetic progression.
+    """
+    progression = [first_element]
+
+    for i in range(elements_count):
+        progression.append(progression[-1] + step)
+
+    return progression
+
+
 def make_game_data():
     '''
     Generates a question about a missing progression element.
@@ -21,14 +33,13 @@ def make_game_data():
     elements_count = randint(MIN_COUNT, MAX_COUNT)
     first_element = randint(MIN_RANGE, MAX_RANGE)
     step = randint(MIN_STEP, MAX_STEP)
-    last_element = first_element + (elements_count - 1) * step
 
-    progression = list(range(first_element, last_element + 1, step))
+    progression = make_progression(first_element, elements_count, step)
 
-    missing_el_index = randint(0, elements_count - 1)
+    missing_element_index = randint(0, elements_count - 1)
 
-    answer_game = progression[missing_el_index]
-    progression[missing_el_index] = '..'
+    answer_game = progression[missing_element_index]
+    progression[missing_element_index] = '..'
     progression = list(map(str, progression))
     progression = ' '.join(progression)
 
