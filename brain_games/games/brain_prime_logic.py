@@ -4,7 +4,7 @@ from random import randint
 GAME_CONDITION = 'Answer "yes" if given number is prime. ' \
     'Otherwise answer "no".'
 
-MIN_RANGE = 2
+MIN_RANGE = 0
 MAX_RANGE = 1000
 
 
@@ -14,6 +14,10 @@ def is_prime(num):
     :param num: int
     :return: bool
     '''
+
+    if num <= 1:
+        return False
+
     denominator = 2
 
     while denominator <= num ** 0.5:
