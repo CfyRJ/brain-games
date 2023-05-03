@@ -25,7 +25,7 @@ def make_game_data():
     return: str, str
     '''
     num_quest = randint(MIN_RANGE, MAX_RANGE)
-    answer_game = is_even(num_quest)
+    answer_game = 'yes' if is_even(num_quest) else 'no'
 
     question = f'{num_quest}'
 
