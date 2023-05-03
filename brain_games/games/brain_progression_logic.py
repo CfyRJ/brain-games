@@ -38,9 +38,9 @@ def make_game_data():
 
     missing_element_index = randint(0, elements_count - 1)
 
+    progression = list(map(str, progression))
     answer_game = progression[missing_element_index]
     progression[missing_element_index] = '..'
-    progression = list(map(str, progression))
     progression = ' '.join(progression)
 
     question = f'{progression}'
