@@ -17,7 +17,7 @@ def is_even(num):
     return num % 2 == 0
 
 
-def make_game_work():
+def make_game_data():
     '''
     Generates an even number question.
     Calculates the answer for an expression.
