@@ -25,7 +25,7 @@ def is_prime(num):
         return True
 
 
-def make_game_work():
+def make_game_data():
     '''
     Generates an prime number question.
     Calculates the answer for an expression.
