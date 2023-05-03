@@ -26,7 +26,7 @@ def calculate_expression(num1, num2, operation):
     return str(operations[operation](num1, num2))
 
 
-def make_game_work():
+def make_game_data():
     '''
     Generates an expression question.
     Calculates the answer for an expression.
