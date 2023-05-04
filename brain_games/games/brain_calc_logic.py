@@ -10,13 +10,13 @@ MAX_RANGE2 = 10
 
 
 def calculate_expression(num1, num2, operation):
-    '''
+    """
     Returns the result of an expression.
     :param num1: int
-    :param num2:int
+    :param num2: -
     :param operation: The function to be called.
     :return: str
-    '''
+    """
     operations = {
         "+": operator.add,
         "-": operator.sub,
@@ -27,12 +27,12 @@ def calculate_expression(num1, num2, operation):
 
 
 def make_game_data():
-    '''
+    """
     Generates an expression question.
     Calculates the answer for an expression.
     Returns the question and its own answer.
     :return: str
-    '''
+    """
     operations = ['+', '-', '*']
 
     num1 = randint(MIN_RANGE, MAX_RANGE1)
