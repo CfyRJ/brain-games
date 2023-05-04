@@ -17,11 +17,11 @@ def play_game(module_game):
     print(f'Hello, {name}!')
 
     for i in range(COUNT_REPEAT):
-        answer_game, text_quest = module_game.make_game_data()
+        answer_game, question = module_game.make_game_data()
 
         print(module_game.GAME_CONDITION)
 
-        print(f'Question: {text_quest}')
+        print(f'Question: {question}')
         answer_user = input('Your answer: ')
 
         if answer_user == answer_game:
