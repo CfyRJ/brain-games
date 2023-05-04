@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "hexlet-code"
-version = "0.4.6"
+version = "0.4.7"
 description = "This is a collection of games. Even number. Evaluate expression. Find the greatest common multiple. Is it a simple number. Determine the missing term of the progression."
 authors = ["Alex Kositskiy <koso-96@mail.ru>"]
 readme = "README.md"
