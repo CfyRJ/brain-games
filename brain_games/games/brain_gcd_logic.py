@@ -10,11 +10,11 @@ MAX_RANGE2 = 10
 
 
 def make_game_data():
-    '''
+    """
     Generates a question about the greatest common divisor.
     Computes its own answer. Returns the question and its own answer.
     :return: int, str
-    '''
+    """
     num1 = randint(MIN_RANGE, MAX_RANGE1)
     num2 = randint(MIN_RANGE, MAX_RANGE2)
 
