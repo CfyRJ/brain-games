@@ -24,12 +24,12 @@ def make_progression(first_element, elements_count, step):
 
 
 def make_game_data():
-    '''
+    """
     Generates a question about a missing progression element.
     Calculates the answer for an expression.
     Returns the question and its own answer.
     :return: int, str
-    '''
+    """
     elements_count = randint(MIN_COUNT, MAX_COUNT)
     first_element = randint(MIN_RANGE, MAX_RANGE)
     step = randint(MIN_STEP, MAX_STEP)
