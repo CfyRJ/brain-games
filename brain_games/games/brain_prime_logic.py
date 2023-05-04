@@ -9,11 +9,11 @@ MAX_RANGE = 1000
 
 
 def is_prime(num):
-    '''
+    """
     Is the number prime.
     :param num: int
     :return: bool
-    '''
+    """
 
     if num <= 1:
         return False
@@ -30,11 +30,11 @@ def is_prime(num):
 
 
 def make_game_data():
-    '''
+    """
     Generates an prime number question.
     Calculates the answer for an expression.
     Returns the question and its own answer.
-    '''
+    """
     quest_num = randint(MIN_RANGE, MAX_RANGE)
 
     answer_game = 'yes' if is_prime(quest_num) else 'no'
