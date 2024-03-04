@@ -1,4 +1,5 @@
-# python-package
+# Brain games
+## python-package
 
 ### This is a collection of games. Even number. Evaluate expression. Find the greatest common multiple. Is it a simple number. Determine the missing term of the progression.
 
